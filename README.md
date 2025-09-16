@@ -7,13 +7,15 @@ python3.11 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 model=Llama-3.2-1B-Instruct
+cd open-unlearning
+python setup_data.py --eval
+cd ..
 ```
 
 To reproduce Table 1 of the paper, run
 ```
 python entrypoint.py --mode=figure1 --dataset=TOFU
 ```
-TOFU caches all evaluations, and the results of the evaluations are provided for convenience. To download all models and re-run evaluations, delete the folder open-unlearning/saves/eval/FIG1 before running the above command. 
 
 To evaluate a model on TOFU, run the following. Paths for evaluations should be absolute paths. Evaluations will appear in the evals folder. 
 ```
