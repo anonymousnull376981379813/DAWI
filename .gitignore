@@ -1,0 +1,6 @@
+venv/
+checkpoints/
+mud_venv
+mud20k/__pycache__/forget_eval.cpython-310.pyc
+tofu/__pycache__/tofu.cpython-310.pyc
+tofu/__pycache__/tofu.cpython-311.pyc

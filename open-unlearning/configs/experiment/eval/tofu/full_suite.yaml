@@ -1,0 +1,18 @@
+# configs/experiment/eval/tofu/full_suite.yaml
+# Inherit the stock TOFU eval settings, then expand metrics.
+defaults:
+  - eval/tofu/default   # <-- correct relative path inside the 'experiment' group
+
+metrics:
+  - forget_Q_A_Prob
+  - forget_Q_A_ROUGE
+  - model_utility
+  - forget_quality
+  - privleak
+  - extraction_strength
+  - exact_memorization
+  - mia_loss
+  - mia_gradnorm
+  - mia_min_k
+  - mia_min_k_plus_plus
+  - mia_zlib
